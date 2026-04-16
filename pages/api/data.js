@@ -41,7 +41,7 @@ export default async function handler(req, res) {
   const sunsetUnix =
     Math.floor(new Date(daily.sunset[0]).getTime() / 1000) - utcOffset;
   const dtUnix =
-    Math.floor(new Date(current.time + ":00Z").getTime() / 1000) - utcOffset;
+    Math.floor(new Date(current.time + ":00Z").getTime() / 1000) - utcOffset; //":00Z" force Node.js à interpréter la date comme UTC
 
   // Transformation des données Open-Meteo au format attendu par les composants existants
   res.status(200).json({
