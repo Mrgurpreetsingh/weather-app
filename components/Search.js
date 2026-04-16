@@ -1,3 +1,4 @@
+// Barre de recherche de ville — composant conservé mais non utilisé depuis la migration vers une ville fixe dans config.json
 import styles from "./Search.module.css";
 
 export const Search = ({

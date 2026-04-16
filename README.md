@@ -45,3 +45,21 @@ Any feature requests and pull requests are welcome!
 ## License
 
 The project is under [MIT license](https://choosealicense.com/licenses/mit/).
+
+## Modifications apportées
+
+- Migration de l'API OpenWeatherMap vers [Open-Meteo](https://open-meteo.com/) (gratuit, sans clé API)
+- Suppression de la barre de recherche — ville configurée dans `config.json`
+- Ajout du rafraîchissement automatique des données toutes les heures
+- Résolution de la compatibilité Node.js v22 via `cross-env` (pas besoin si pas de soucis de compatibilité)
+
+## Améliorations possibles
+
+- Afficher les prévisions sur plusieurs jours (l'API Open-Meteo le supporte via `daily`)
+- Permettre la configuration de plusieurs villes dans `config.json`
+- Ajouter une gestion d'erreur réseau plus robuste (timeout, retry)
+- Mettre en cache la dernière réponse pour afficher des données même hors-ligne
+- Ajouter des tests unitaires sur les fonctions `getIcon` et `getDescription`
+- Interface admin pour configurer la ville sans modifier `config.json` manuellement
+- Enrichir le mapping des icônes météos pour couvrir les 27 codes WMO d'Open-Meteo (actuellement 9 icônes il en faudrait plus)
+- Chaque MetricsCard (humidité, vent, visibilité...) pourrait avoir une option pour l'afficher ou la masquer selon les besoins du client.

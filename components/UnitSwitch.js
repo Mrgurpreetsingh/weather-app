@@ -1,3 +1,4 @@
+// Bouton de bascule entre le système métrique (°C, m/s, km) et le système impérial (°F, m/h, miles)
 import styles from "./UnitSwitch.module.css";
 
 export const UnitSwitch = ({ onClick, unitSystem }) => {

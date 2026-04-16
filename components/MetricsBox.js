@@ -1,3 +1,4 @@
+// Grille de métriques secondaires : humidité, vitesse et direction du vent, visibilité, lever et coucher du soleil
 import { degToCompass } from "../services/converters";
 import {
   getTime,

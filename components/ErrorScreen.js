@@ -1,3 +1,4 @@
+// Écran affiché si l'API renvoie une erreur (ville introuvable ou problème réseau)
 import styles from "./ErrorScreen.module.css";
 
 export const ErrorScreen = ({ errorMessage, children }) => {

@@ -1,3 +1,4 @@
+// Carte individuelle de métrique — reçoit un titre, une icône, une valeur et une unité
 import Image from "next/image";
 import styles from "./MetricsCard.module.css";
 

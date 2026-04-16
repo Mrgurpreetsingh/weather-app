@@ -1,3 +1,4 @@
+// Carte principale — affiche la ville, le pays, l'icône météo, la température et la température ressentie
 import Image from "next/image";
 import { ctoF } from "../services/converters";
 import styles from "./MainCard.module.css";
