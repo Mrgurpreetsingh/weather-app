@@ -50,7 +50,8 @@ export const App = () => {
       <ContentBox>
         <Header>
           <DateAndTime weatherData={weatherData} unitSystem={unitSystem} />
-          <Search
+          {/* La Searchbar est commentée car n'est pas utie pour une seule ville*/}
+          {/*}  <Search
             placeHolder="Search a city..."
             value={cityInput}
             onFocus={(e) => {
@@ -62,7 +63,7 @@ export const App = () => {
               e.keyCode === 13 && setTriggerFetch(!triggerFetch);
               e.target.placeholder = "Search a city...";
             }}
-          />
+          />*/}
         </Header>
         <MetricsBox weatherData={weatherData} unitSystem={unitSystem} />
         <UnitSwitch onClick={changeSystem} unitSystem={unitSystem} />
